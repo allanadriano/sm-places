@@ -1,0 +1,29 @@
+@import 'colors';
+@import 'utils';
+@import 'alert';
+@import 'card';
+@import 'buttons';
+@import 'navbar';
+
+body {
+  background: $bg-color;
+  padding-bottom: 5rem;
+}
+
+main {
+  padding-top: 90px;
+}
+
+h1, h2 {
+  font-weight: 400;
+  color: $title-color;
+  line-height: 1.2;
+}
+
+p {
+  color: $text-color;
+}
+
+b {
+  font-weight: 400;
+}

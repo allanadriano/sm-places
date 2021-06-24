@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 300
+  }
+}
+
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1140px;
+
+  @media only screen and (max-width: $breakpoint-lg - 1px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md - 1px) {
+    max-width: 720px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm - 1px) {
+    max-width: 540px;
+  }
+
+  @media only screen and (max-width: $breakpoint-xs - 1px) {
+    max-width: 100%;
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}

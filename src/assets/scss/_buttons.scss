@@ -1,0 +1,43 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: $white-color;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all ease 0.5s;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  font: {
+    size: 14px;
+    weight: 600
+  }
+
+  &--action {
+    background: $green-color;
+
+    &:hover {
+      background: $green-hover-color;
+    }
+  }
+
+  &--secondary {
+    background: $white-color;
+    color: $text-color;
+
+    &:hover {
+      background: $gray-light-color;
+    }
+  }
+}
+
+.badge {
+  background: $orange-color;
+  color: $white-color;
+  padding: 5px 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,209 @@
+.card {
+  background: $white-color;
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 4px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
+  &.breadcrumb {
+    background: $purple-light-color;
+    margin-top: 100px;
+
+    .card-body {
+      padding: 8px 20px;
+      font-weight: 400;
+      color: $white-color;
+
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        color: $white-color;
+      }
+
+      span {
+        margin: {
+          left: 5px;
+          right: 5px;
+        }
+      }
+
+    }
+  }
+
+  .card-body {
+
+    &.product {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+
+      @media only screen and (max-width: $breakpoint-sm - 1px) {
+        flex-direction: column;
+      }
+
+      .content-details {
+        display: flex;
+
+        @media only screen and (max-width: $breakpoint-sm - 1px) {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        .details {
+          padding: 20px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          h2 {
+            font-size: 24px;
+          }
+
+          .price {
+            display: flex;
+            font-size: 24px;
+
+            span {
+              margin-right: 20px;
+            }
+
+            &--retail {
+              font-size: 16px;
+              color: $gray-color
+            }
+          }
+        }
+      }
+
+      .btn {
+        margin-right: 20px;
+
+        @media only screen and (max-width: $breakpoint-sm - 1px) {
+          width: 100%;
+          text-align: center;
+          margin: {
+            top: 20px;
+            right: 0px
+          }
+        }
+      }
+
+    }
+
+    &.product-detail {
+      display: flex;
+      padding: 15px 20px;
+
+      @media only screen and (max-width: $breakpoint-md - 1px) {
+        flex-direction: column;
+      }
+
+      .content-details {
+
+        &.image {
+
+          .content-image {
+            position: relative;
+            min-width: 350px;
+            min-height: 350px;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: $breakpoint-md - 1px) {
+              max-width: 350px;
+              max-height: 350px;
+              margin: 15px auto 20px;
+            }
+
+            img {
+              position: absolute;
+
+            }
+
+            .badge {
+              position: absolute;
+              bottom: 10px;
+
+              &.right {
+                right: 0px;
+                margin-right: 10px;
+              }
+
+              &.left {
+                left: 0px;
+                margin-left: 10px ;
+              }
+            }
+          }
+
+          p {
+            @media only screen and (max-width: $breakpoint-md) {
+              text-align: center;
+            }
+          }
+        }
+
+        &.text {
+          padding-left: 20px;
+          width: 100%;
+          max-width: 48%;
+
+          @media only screen and (max-width: $breakpoint-md - 1px) {
+            max-width: 100%;
+            text-align: center;
+          }
+
+          h1 {
+            font-size: 50px;
+
+            @media only screen and (max-width: $breakpoint-md - 1px) {
+              margin-top: 25px;
+            }
+          }
+
+          p {
+            margin-top: 25px;
+          }
+        }
+
+        &.shop {
+          padding: 40px 30px;
+
+          .price {
+            display: flex;
+            font-size: 50px;
+            margin-bottom: 70px;
+
+            @media only screen and (max-width: $breakpoint-md - 1px) {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+
+            span {
+              margin-right: 20px;
+            }
+
+            &--retail {
+              font-size: 20px;
+              color: $gray-color
+            }
+          }
+
+          p {
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: $red-color
+          }
+
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
